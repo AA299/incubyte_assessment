@@ -12,6 +12,7 @@
 3. Created tests for the same service
 4. I was following the TDD approach, so I started with the simplest test and then wrote the code to pass the test. https://blog.incubyte.co/blog/tdd-assessment/
 5. I added more tests to cover more scenarios.
+6. Deployed the assessment on https://incubyte-assessment.vercel.app/ (Open DevTools console window to see simple output by app comp)
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
