@@ -1,5 +1,19 @@
 # IncubyteAssessment
 
+
+### Screenshot of Jasmine Test Results
+
+![jasmine test results](readme/image.png)
+
+
+### Projet Setup
+1. I initialize the project with Angular CLI, I did not want to add any other dependencies. I wanted to use the basic Angular framework to build the project.
+2. I created a simple service to handle the string calculation.
+3. Created tests for the same service
+4. I was following the TDD approach, so I started with the simplest test and then wrote the code to pass the test. https://blog.incubyte.co/blog/tdd-assessment/
+5. I added more tests to cover more scenarios.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
 
 ## Development server
@@ -25,3 +39,5 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
