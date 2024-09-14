@@ -18,7 +18,9 @@ export class AppComponent implements OnInit {
     { input: "", expected: 0 },
     { input: "1", expected: 1 },
     { input: "1,2", expected: 3 },
-    { input: "1\n2,3", expected: 6 }
+    { input: "1\n2,3", expected: 6 },
+    { input: "1,-2,3", expected: "negative numbers not allowed -2" },
+    { input: "-1,-2", expected: "negative numbers not allowed -1, -2" }
   ];
 
   ngOnInit(): void {

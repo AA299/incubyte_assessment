@@ -25,4 +25,11 @@ describe('StringCalculatorService', () => {
   it('should return the sum of number with newline escape sequence character in input', () => {
     expect(service.add("1\n2,3")).toEqual(6);
   })
+
+  it('should throw an error for negative numbers', () => {
+    expect(() => service.add('1,-2,3')).toThrowError('negative numbers not allowed -2');
+    expect(() => service.add('-1,-2')).toThrowError('negative numbers not allowed -1, -2');
+  });
+
+
 });
