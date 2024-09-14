@@ -21,4 +21,8 @@ describe('StringCalculatorService', () => {
   it('should return the sum of two numbers', () => {
     expect(service.add('1,2')).toEqual(3);
   });
+
+  it('should return the sum of number with newline escape sequence character in input', () => {
+    expect(service.add("1\n2,3")).toEqual(6);
+  })
 });

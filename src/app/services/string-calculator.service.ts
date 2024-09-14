@@ -11,6 +11,8 @@ export class StringCalculatorService {
     if (!numbers) {
       return 0;
     }
-    return numbers.split(',').map((x) => Number(x)).reduce((sum, num) => sum+num, 0)
+    const numArray = numbers.split(/,|\n/).map(x => Number(x));
+
+    return numArray.reduce((sum, num) => sum + (isNaN(num) ? 0 : num), 0);
   }
 }
