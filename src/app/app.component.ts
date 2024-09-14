@@ -20,7 +20,8 @@ export class AppComponent implements OnInit {
     { input: "1,2", expected: 3 },
     { input: "1\n2,3", expected: 6 },
     { input: "1,-2,3", expected: "negative numbers not allowed -2" },
-    { input: "-1,-2", expected: "negative numbers not allowed -1, -2" }
+    { input: "-1,-2", expected: "negative numbers not allowed -1, -2" },
+    { input: "//;\n1;2", expected: 3 },
   ];
 
   ngOnInit(): void {

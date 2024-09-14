@@ -31,5 +31,8 @@ describe('StringCalculatorService', () => {
     expect(() => service.add('-1,-2')).toThrowError('negative numbers not allowed -1, -2');
   });
 
-
+  
+  it('should handle custom single-character delimiter', () => {
+    expect(service.add('//;\n1;2')).toEqual(3);
+  });
 });
